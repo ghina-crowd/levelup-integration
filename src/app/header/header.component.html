@@ -1,0 +1,130 @@
+<header id="header" class="header px-5">
+  <div id="normal-header">
+    <a routerLink="/home" id="image-link" class=""><img src="assets/images/header/logo.svg" class="w-75" alt="Reverse Logo"
+                                                  id="header-img"/></a>
+    <nav id="nav-bar" class=" list-header">
+      <ul>
+        <li class="nav-link d-flex flex-column" id="menu-item" routerLink="/home" routerLinkActive="active"><a
+          class="menu-link">
+          <img
+            src="assets/images/header/home.svg" class="" alt="">
+          <p>{{'_Home' | translate}}</p> </a></li>
+
+         <li class="nav-link d-flex flex-column" id="menu-item"  [ngClass]="router.url.includes('pricing')? 'active' : ''">
+           <a [href]=" baseUrl + 'pricing/#/pricing/site/1'"
+              class="menu-link">
+             <img
+               src="assets/images/header/events.svg" class="" alt="">
+             <p>Pricing</p> </a>
+          </li>
+
+        <li class="nav-link d-flex flex-column" id="menu-item" (click)="active = 2"   [ngClass]="router.url.includes('events')? 'active' : ''"><a [href]="   baseUrl + 'events/#/events'"
+                                                                   class="menu-link">
+          <img
+            src="assets/images/header/events.svg" class="" alt="">
+          <p>{{'_Events' | translate}}</p> </a>
+        </li>
+        <li class="nav-link d-flex flex-column" id="menu-item" [ngClass]="router.url.includes('schedule')? 'active' : ''" >
+
+          <a  [href]=" baseUrl + 'schedule/#/schedule/site/1'"  class="menu-link"
+          ><img src="assets/images/header/booking.svg" class="">  <p>Schedule</p>
+          </a>
+        </li>
+        <li class="nav-link d-flex flex-column" id="menu-item" [ngClass]="router.url.includes('instructors')? 'active' : ''">
+          <a  [href]=" baseUrl + 'instructors/#/instructors'"  class="menu-link"
+          >           <img src="assets/images/header/booking.svg" class="">
+            <p>Instructors</p>
+          </a>
+        </li>
+        <li class="nav-link d-flex flex-column" id="menu-item" routerLink="/about" routerLinkActive="active">
+         <a
+          class="menu-link">  <img src="assets/images/header/about-us.svg" class="" alt="">
+           <p>{{'_AboutUs' | translate}} </p></a></li>
+        <li class="nav-link d-flex flex-column" id="menu-item" routerLink="/contact" routerLinkActive="active"><a
+          class="menu-link"> <img
+          src="assets/images/header/contactus" class="" alt=""><p>{{'_ContactUs' | translate}} </p></a></li>
+      </ul>
+    </nav>
+    <div class="d-flex user-account justify-content-end ">
+
+      <div class="my-auto ">
+        <ul class="" style="cursor: pointer">
+          <li class="nav-item dropdown dropdown-slide dropdown-hover">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+
+              >Account </a>
+            <div class="dropdown-menu bg-success text-left px-2" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item"  [href]="baseUrl +  'login/#/account'" >Account/Login</a>
+              <a class="dropdown-item" [href]=" baseUrl + 'login/#/myclasses'">My Classes</a>
+              <a class="dropdown-item" [href]=" baseUrl + 'login/#/myseries'">My Series</a>
+              <a class="dropdown-item" [href]=" baseUrl + 'login/#/myvedios'">My Videos</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="responsive-header">
+    <a routerLink="/home" class="logo"><img src="assets/images/header/logo.svg" class="" alt="Reverse Logo"></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn"/>
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li>
+        <div class="d-flex user-account  px-0 mx-2">
+
+          <div class="my-auto ">
+            <ul class="pl-3" style="cursor: pointer">
+              <li class="nav-item dropdown dropdown-slide dropdown-hover">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  account
+                </a>
+                <div class="dropdown-menu bg-success text-left px-2" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item"  [href]="baseUrl +  'login/#/account'" >Account/Login</a>
+                  <a class="dropdown-item" [href]=" baseUrl + 'login/#/myclasses'">My Classes</a>
+                  <a class="dropdown-item" [href]=" baseUrl + 'login/#/myseries'">My Series</a>
+                  <a class="dropdown-item" [href]=" baseUrl + 'login/#/myvedios'">My Videos</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li><a routerLink="/home"><img src="assets/images/header/home.svg" class="mx-2">{{'_Home' | translate}}</a></li>
+      <li><a [href]=" baseUrl+ 'events/#/events'" routerLinkActive="active"><img src="assets/images/header/events.svg"
+                                                                 class="mx-2"> {{'_Events' | translate}}</a></li>
+
+      <li  >
+
+        <a  [href]=" baseUrl + 'pricing/#/pricing'"  class="menu-link"
+        >  <img src="assets/images/header/booking.svg" class="mx-2"> Pricing
+        </a>
+      </li>
+      <li>
+        <a  [href]=" baseUrl + 'schedule/#/schedule/site/1'"
+           > <img src="assets/images/header/booking.svg"
+                                          class="mx-2">Schedule
+        </a>
+
+      </li>
+
+
+      <li  >
+
+        <a  [href]=" baseUrl + 'instructors/#/instructors'"  class="menu-link"
+        >  <img src="assets/images/header/booking.svg" class="mx-2"> Instructors
+        </a>
+      </li>
+
+      <li><a routerLink="/about"><img src="assets/images/header/about-us.svg" class="mx-2"> {{'_AboutUs' | translate}}
+      </a></li>
+      <li><a routerLink="/contact"><img src="assets/images/header/contactus.svg"
+                                        class="mx-2"> {{'_ContactUs' | translate}}</a></li>
+
+    </ul>
+
+  </div>
+
+</header>
+
