@@ -12,7 +12,7 @@ declare const zingEmbed: any;
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  baseUrl = 'https://www.crowd-test.com/';
+  baseUrl = location.origin + '/';
 
   constructor(public restService: DataService,
               public appService: AppService,

@@ -17,7 +17,8 @@ export class HeaderComponent implements OnInit {
   name: string;
   active = 0;
 
-  baseUrl = 'https://www.crowd-test.com/';
+  baseUrl =  location.origin + '/';
+
 
   constructor(public appService: AppService,
               private authService: AuthService,
