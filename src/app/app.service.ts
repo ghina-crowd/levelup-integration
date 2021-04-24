@@ -21,11 +21,11 @@ export class AppService {
   ) {
 
     /*** Language Configurations **/
-    if (!localStorage.getItem('language')) {
+    // if (!localStorage.getItem('language')) {
       localStorage.setItem('language', 'en');
-    }
+    // }
     const browserLang = localStorage.getItem('language');
-    translate.setDefaultLang(browserLang.match(/en|ar/) ? browserLang : 'en');
+    translate.setDefaultLang(browserLang.match(/en|ar/) ? 'en' : 'en');
     this.language.next(browserLang);
 
 
