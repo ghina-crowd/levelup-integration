@@ -1,8 +1,8 @@
 export const environment = {
   production: true,
-  apiURI: 'https://crowd-server.com/levelup/v1',
-  appUrl: 'https://crowd-server.com/levelup/v1',
-  baseUrl: 'https://crowd-server.com/levelup/v1',
+  apiURI: 'http://levelup.backend.crowddigitalportal.com/v1',
+  appUrl: 'http://levelup.backend.crowddigitalportal.com/v1',
+  baseUrl: 'http://levelup.backend.crowddigitalportal.com/v1',
   fileUrl: 'https://crowd-server.com/levelup/uploads/original/',
   firebaseConfig: {
     apiKey: "AIzaSyC9O5XnDgopFaMONPpTV8Vnt7MCmp6ZP40",

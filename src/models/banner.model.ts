@@ -3,3 +3,4 @@ export interface BannerModel {
   image: string;
   active: boolean;
 }
+

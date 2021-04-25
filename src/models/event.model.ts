@@ -5,3 +5,4 @@ export interface EventModel {
   date: Date;
   image: string;
 }
+

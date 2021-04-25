@@ -14,3 +14,4 @@ export interface BookPackageModel {
   bookedClasses: BookClassModel[];
   bookingclasses: BookClassModel[];
 }
+

@@ -7,7 +7,7 @@ import {Router} from "@angular/router";
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-  baseUrl = 'https://www.crowd-test.com/';
+  baseUrl = location.origin + '/';
 
   constructor(public router: Router,) { }
 

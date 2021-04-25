@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
     this.message = this.messagingService.currentMessage;
     this.getCategories();
     this.appService.language.subscribe(language => {
-      this.appService.currentLanguage = language === 'en' ? 'en' : 'ar';
+      this.appService.currentLanguage = language === 'en' ? 'en' : 'en';
       switch (language) {
         case ('en') :
           this.document.documentElement.setAttribute('lang', 'en');

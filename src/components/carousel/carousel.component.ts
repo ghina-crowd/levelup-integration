@@ -15,7 +15,7 @@ import {FuseSplashScreenService} from "../../services/fuse-splash-screen.service
 export class CarouselComponent implements OnInit {
   banner: BannerModel[] = [];
   isLogin = false;
-  baseUrl = 'https://www.crowd-test.com/';
+  baseUrl = location.origin + '/';
   slideConfig = {
     slidesToShow: 1,
     slidesToScroll: 1,
