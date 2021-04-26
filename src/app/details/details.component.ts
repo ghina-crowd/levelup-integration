@@ -1,13 +1,13 @@
 import {Component, OnInit} from '@angular/core';
-import {DataService} from "../../services/data.service";
-import {AppService} from "../app.service";
-import {ActivatedRoute} from "@angular/router";
-import {ToastrService} from "ngx-toastr";
-import {HttpErrorResponse} from "@angular/common/http";
-import {Paginations} from "../../models/paginations";
-import {PackageModel} from "../../models/package.model";
-import {CategoryModel} from "../../models/category.model";
-import {BookModel} from "../../models/book.model";
+import {DataService} from '../../services/data.service';
+import {AppService} from '../app.service';
+import {ActivatedRoute} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
+import {HttpErrorResponse} from '@angular/common/http';
+import {Paginations} from '../../models/paginations';
+import {PackageModel} from '../../models/package.model';
+import {CategoryModel} from '../../models/category.model';
+import {BookModel} from '../../models/book.model';
 
 @Component({
   selector: 'app-details',
@@ -16,7 +16,7 @@ import {BookModel} from "../../models/book.model";
 })
 export class DetailsComponent implements OnInit {
   pagination = new Paginations();
-  packages: PackageModel[] =[];
+  packages: PackageModel[] = [];
   allpackages: PackageModel[] = [];
   isLogin = false;
   category: CategoryModel;
@@ -39,7 +39,7 @@ export class DetailsComponent implements OnInit {
 
       if (this.pagination.page === 0) {
         this.allpackages = res.results;
-        let category = this.appService.categories.filter(item => item._id === this.pagination.id);
+        const category = this.appService.categories.filter(item => item._id === this.pagination.id);
         this.category = category[0];
       } else {
 
@@ -72,7 +72,7 @@ export class DetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    window.scroll(0 ,0);
+    window.scroll(0 , 0);
     this.router.params.subscribe(params => {
       this.pagination.id = params.id;
       this.getPackages();

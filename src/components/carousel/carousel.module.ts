@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import {TranslateModule} from '@ngx-translate/core';
 import {CarouselComponent} from './carousel.component';
 import {SlickCarouselModule} from 'ngx-slick-carousel';
-import {RouterModule} from "@angular/router";
-import {NgxShimmerLoadingModule} from "ngx-shimmer-loading";
+import {RouterModule} from '@angular/router';
+import {NgxShimmerLoadingModule} from 'ngx-shimmer-loading';
 
 
 

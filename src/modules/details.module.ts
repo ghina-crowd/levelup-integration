@@ -4,7 +4,7 @@ import { DetailsComponent } from '../app/details/details.component';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
 import {TranslateModule} from '@ngx-translate/core';
-import {InfiniteScrollModule} from "ngx-infinite-scroll";
+import {InfiniteScrollModule} from 'ngx-infinite-scroll';
 
 const routes: Routes = [
   {

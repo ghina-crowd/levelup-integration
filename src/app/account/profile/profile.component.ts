@@ -4,7 +4,7 @@ import {HttpErrorResponse} from '@angular/common/http';
 import {DataService} from '../../../services/data.service';
 import {UserModel} from '../../../models/user.model';
 import {ToastrService} from 'ngx-toastr';
-import {AppService} from "../../app.service";
+import {AppService} from '../../app.service';
 
 @Component({
   selector: 'app-profile',
@@ -29,7 +29,7 @@ export class ProfileComponent implements OnInit {
       this.profileForm.patchValue(res);
     }).catch((err: HttpErrorResponse) => {
       if (err.status) {
-        if(err.error.code === 401) {
+        if (err.error.code === 401) {
           this.restService.refreshTokenUser();
         }
       }
@@ -43,7 +43,7 @@ export class ProfileComponent implements OnInit {
     }).catch((err: HttpErrorResponse) => {
       if (err.status) {
         this.toastr.error(err.error.message, '');
-        if(err.error.code === 401) {
+        if (err.error.code === 401) {
           this.restService.refreshTokenUser();
         }
       }

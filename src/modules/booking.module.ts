@@ -4,9 +4,9 @@ import { BookingComponent } from '../app/booking/booking.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HttpClientModule} from '@angular/common/http';
 import {TranslateModule} from '@ngx-translate/core';
-import {CalendarModule, CalendarWeekModule} from "angular-calendar";
-import {CalendarHeaderComponent} from "../components/utils-calender-header/calender-header.component";
-import {NgxShimmerLoadingModule} from "ngx-shimmer-loading";
+import {CalendarModule, CalendarWeekModule} from 'angular-calendar';
+import {CalendarHeaderComponent} from '../components/utils-calender-header/calender-header.component';
+import {NgxShimmerLoadingModule} from 'ngx-shimmer-loading';
 
 const routes: Routes = [
   {

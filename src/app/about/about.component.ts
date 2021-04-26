@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {AppService} from "../app.service";
-import {DataService} from "../../services/data.service";
-import {HttpErrorResponse} from "@angular/common/http";
-import {ToastrService} from "ngx-toastr";
-import {ContentModel} from "../../models/content.model";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {AppService} from '../app.service';
+import {DataService} from '../../services/data.service';
+import {HttpErrorResponse} from '@angular/common/http';
+import {ToastrService} from 'ngx-toastr';
+import {ContentModel} from '../../models/content.model';
 
 @Component({
   selector: 'app-about',
@@ -34,7 +34,7 @@ export class AboutComponent implements OnInit {
   }
 
   decode(text: string): string {
-    var ret:string = "";
+    let ret = '';
 
     this.dummyElem.innerHTML = text;
     document.body.appendChild(this.dummyElem);

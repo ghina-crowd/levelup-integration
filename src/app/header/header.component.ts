@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
-import {AppService} from "../app.service";
-import {Router} from "@angular/router";
-import {DataService} from "../../services/data.service";
-import {AuthService} from "angularx-social-login";
-import {FuseSplashScreenService} from "../../services/fuse-splash-screen.service";
+import {AppService} from '../app.service';
+import {Router} from '@angular/router';
+import {DataService} from '../../services/data.service';
+import {AuthService} from 'angularx-social-login';
+import {FuseSplashScreenService} from '../../services/fuse-splash-screen.service';
 
 @Component({
   selector: 'app-header',

@@ -1,4 +1,4 @@
-import {ScheduleModel} from "./schedule.model";
+import {ScheduleModel} from './schedule.model';
 
 export class BookClassModel {
   _id: string;

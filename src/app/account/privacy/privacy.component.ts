@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {UserModel} from "../../../models/user.model";
-import {HttpErrorResponse} from "@angular/common/http";
-import {MatDialog} from "@angular/material/dialog";
-import {AppService} from "../../app.service";
-import {ToastrService} from "ngx-toastr";
-import {DataService} from "../../../services/data.service";
-import {MustMatch} from "../../_helpers/must-match.validator";
+import {UserModel} from '../../../models/user.model';
+import {HttpErrorResponse} from '@angular/common/http';
+import {MatDialog} from '@angular/material/dialog';
+import {AppService} from '../../app.service';
+import {ToastrService} from 'ngx-toastr';
+import {DataService} from '../../../services/data.service';
+import {MustMatch} from '../../_helpers/must-match.validator';
 
 @Component({
   selector: 'app-privacy',

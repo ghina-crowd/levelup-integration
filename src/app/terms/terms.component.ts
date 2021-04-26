@@ -16,9 +16,9 @@ export class TermsComponent implements OnInit, AfterViewInit {
 
 
   ngAfterViewInit() {
-    $(document).ready(()=> {
+    $(document).ready(() => {
       $('iframe').each(function(){
-        $(this).attr('scrolling','yes');
+        $(this).attr('scrolling', 'yes');
       });
     });
 

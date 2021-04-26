@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpErrorResponse} from "@angular/common/http";
-import {DataService} from "../../services/data.service";
-import {AppService} from "../app.service";
-import {Router} from "@angular/router";
-import {ToastrService} from "ngx-toastr";
-import {EventModel} from "../../models/event.model";
+import {HttpErrorResponse} from '@angular/common/http';
+import {DataService} from '../../services/data.service';
+import {AppService} from '../app.service';
+import {Router} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
+import {EventModel} from '../../models/event.model';
 declare const zingEmbed: any;
 
 @Component({

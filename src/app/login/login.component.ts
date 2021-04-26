@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
       localStorage.setItem('refresh_token', res.tokens.refresh.token);
       localStorage.setItem('name', res.user.first_name);
       this.appService.name.next(res.user.first_name);
-      let url = localStorage.getItem('url') ? localStorage.getItem('url') : '';
+      const url = localStorage.getItem('url') ? localStorage.getItem('url') : '';
       if (url) {
         this.router.navigateByUrl(url);
         localStorage.removeItem('url');

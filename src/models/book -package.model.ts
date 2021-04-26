@@ -1,6 +1,6 @@
-import {UserModel} from "./user.model";
-import {PackageModel} from "./package.model";
-import {BookClassModel} from "./book-class.model";
+import {UserModel} from './user.model';
+import {PackageModel} from './package.model';
+import {BookClassModel} from './book-class.model';
 
 export interface BookPackageModel {
   endDate: Date;

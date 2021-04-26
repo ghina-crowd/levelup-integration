@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpErrorResponse} from "@angular/common/http";
-import {ToastrService} from "ngx-toastr";
-import {Router} from "@angular/router";
-import {AppService} from "../../app/app.service";
-import {DataService} from "../../services/data.service";
-import {BannerModel} from "../../models/banner.model";
-import {FuseSplashScreenService} from "../../services/fuse-splash-screen.service";
+import {HttpErrorResponse} from '@angular/common/http';
+import {ToastrService} from 'ngx-toastr';
+import {Router} from '@angular/router';
+import {AppService} from '../../app/app.service';
+import {DataService} from '../../services/data.service';
+import {BannerModel} from '../../models/banner.model';
+import {FuseSplashScreenService} from '../../services/fuse-splash-screen.service';
 
 @Component({
   selector: 'app-carousel',

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {HttpErrorResponse} from "@angular/common/http";
-import {DataService} from "../../services/data.service";
-import {ToastrService} from "ngx-toastr";
-import {ContactModel} from "../../models/contact.model";
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {HttpErrorResponse} from '@angular/common/http';
+import {DataService} from '../../services/data.service';
+import {ToastrService} from 'ngx-toastr';
+import {ContactModel} from '../../models/contact.model';
 
 @Component({
   selector: 'app-contact',
@@ -33,7 +33,7 @@ export class ContactComponent implements OnInit {
   }
 
   contcatus() {
-    const contact: ContactModel = this.contactForm.value as ContactModel
+    const contact: ContactModel = this.contactForm.value as ContactModel;
     this.restService.contactus(contact).then((res) => {
       this.toastr.success(res.message , '');
     }).catch((err: HttpErrorResponse) => {

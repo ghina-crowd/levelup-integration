@@ -1,14 +1,14 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpErrorResponse} from "@angular/common/http";
-import {DataService} from "../../../services/data.service";
-import {AppService} from "../../app.service";
-import {ActivatedRoute} from "@angular/router";
-import {ToastrService} from "ngx-toastr";
-import {Paginations} from "../../../models/paginations";
-import {BookPackageModel} from "../../../models/book -package.model";
-import {CategoryModel} from "../../../models/category.model";
-import {BookClassModel} from "../../../models/book-class.model";
-import Swal from "sweetalert2";
+import {HttpErrorResponse} from '@angular/common/http';
+import {DataService} from '../../../services/data.service';
+import {AppService} from '../../app.service';
+import {ActivatedRoute} from '@angular/router';
+import {ToastrService} from 'ngx-toastr';
+import {Paginations} from '../../../models/paginations';
+import {BookPackageModel} from '../../../models/book -package.model';
+import {CategoryModel} from '../../../models/category.model';
+import {BookClassModel} from '../../../models/book-class.model';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-my-booking',

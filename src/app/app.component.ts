@@ -3,9 +3,9 @@ import {AppService} from './app.service';
 import {Meta} from '@angular/platform-browser';
 import {AppTitleService} from './app.title.service';
 import {DOCUMENT} from '@angular/common';
-import {HttpErrorResponse} from "@angular/common/http";
-import {DataService} from "../services/data.service";
-import {MessagingService} from "../services/messaging.service";
+import {HttpErrorResponse} from '@angular/common/http';
+import {DataService} from '../services/data.service';
+import {MessagingService} from '../services/messaging.service';
 
 declare const zingEmbed: any;
 

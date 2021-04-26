@@ -3,12 +3,12 @@ import {Injectable, NgZone} from '@angular/core';
 import {ApiService} from './api.service';
 import {environment} from '../environments/environment';
 import {TokenModel, UserModel} from '../models/user.model';
-import {Paginations, ScheduleBooking} from "../models/paginations";
-import {ContactModel} from "../models/contact.model";
-import {BookModel} from "../models/book.model";
-import {BookClassModel} from "../models/book-class.model";
-import {AuthService} from "angularx-social-login";
-import {Router} from "@angular/router";
+import {Paginations, ScheduleBooking} from '../models/paginations';
+import {ContactModel} from '../models/contact.model';
+import {BookModel} from '../models/book.model';
+import {BookClassModel} from '../models/book-class.model';
+import {AuthService} from 'angularx-social-login';
+import {Router} from '@angular/router';
 
 
 @Injectable({

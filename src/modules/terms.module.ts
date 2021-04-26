@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TermsComponent } from '../app/terms/terms.component';
-import {RouterModule, Routes} from "@angular/router";
+import {RouterModule, Routes} from '@angular/router';
 
 
 const routes: Routes = [

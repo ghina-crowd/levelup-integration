@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
 import {AngularFireMessaging} from '@angular/fire/messaging';
 import {BehaviorSubject} from 'rxjs';
-import {HttpErrorResponse} from "@angular/common/http";
-import {DataService} from "./data.service";
-import {Paginations} from "../models/paginations";
+import {HttpErrorResponse} from '@angular/common/http';
+import {DataService} from './data.service';
+import {Paginations} from '../models/paginations';
 
 @Injectable()
 export class MessagingService {

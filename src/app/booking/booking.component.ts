@@ -1,17 +1,17 @@
 import {Component, OnInit} from '@angular/core';
 import {CalendarEvent, CalendarView} from 'angular-calendar';
-import {colors} from "../../components/utils-calender-header/colors";
-import {isSameDay, isSameMonth} from "date-fns";
-import {AppService} from "../app.service";
-import {DataService} from "../../services/data.service";
-import {HttpErrorResponse} from "@angular/common/http";
-import {Paginations, ScheduleBooking} from "../../models/paginations";
-import {BookPackageModel} from "../../models/book -package.model";
-import {ScheduleModel} from "../../models/schedule.model";
-import {DatePipe} from "@angular/common";
-import {CategoryModel} from "../../models/category.model";
-import {BookClassModel} from "../../models/book-class.model";
-import {ToastrService} from "ngx-toastr";
+import {colors} from '../../components/utils-calender-header/colors';
+import {isSameDay, isSameMonth} from 'date-fns';
+import {AppService} from '../app.service';
+import {DataService} from '../../services/data.service';
+import {HttpErrorResponse} from '@angular/common/http';
+import {Paginations, ScheduleBooking} from '../../models/paginations';
+import {BookPackageModel} from '../../models/book -package.model';
+import {ScheduleModel} from '../../models/schedule.model';
+import {DatePipe} from '@angular/common';
+import {CategoryModel} from '../../models/category.model';
+import {BookClassModel} from '../../models/book-class.model';
+import {ToastrService} from 'ngx-toastr';
 declare const zingEmbed: any;
 
 
@@ -37,7 +37,7 @@ export class BookingComponent implements OnInit {
   pagination = new Paginations();
   viewDate: Date = new Date();
   events: CalendarEvent[] = [];
-  activeDayIsOpen: boolean = false;
+  activeDayIsOpen = false;
   myPackages: BookPackageModel[] = [];
   schedules: ScheduleModel[] = [];
   data: ScheduleModel[] = [];
@@ -104,8 +104,8 @@ export class BookingComponent implements OnInit {
       },
         this.events[eventIndex].color = colors.blue;
       this.package.bookingclasses.push(res);
-      let packages: BookPackageModel[] = this.myPackages.filter(item => item.package === res.bookingPackages);
-      let index = this.myPackages.indexOf(packages[0]);
+      const packages: BookPackageModel[] = this.myPackages.filter(item => item.package === res.bookingPackages);
+      const index = this.myPackages.indexOf(packages[0]);
       this.myPackages[index].bookingclasses.length = this.myPackages[index].bookingclasses.length + 1;
     }).catch((err: HttpErrorResponse) => {
       if (err.status) {
@@ -119,12 +119,12 @@ export class BookingComponent implements OnInit {
 
 
   getDate(date, item: ScheduleModel) {
-    var dayOfWeek = item.dayObj.numberOfDays;
+    const dayOfWeek = item.dayObj.numberOfDays;
     date = new Date(date.setDate(date.getDate() - date.getDay() + dayOfWeek));
-    let endDate = this.datepipe.transform(this.package.endDate, 'MM/dd/yyyy');
+    const endDate = this.datepipe.transform(this.package.endDate, 'MM/dd/yyyy');
     date = new Date(date.setDate(date.getDate() - date.getDay() + (dayOfWeek + 7)));
     if (new Date(this.datepipe.transform(date, 'MM/dd/yyyy')) <= new Date(endDate)) {
-      let eventItem: CalendarEvent = {
+      const eventItem: CalendarEvent = {
         title: this.datepipe.transform(item.startTime, 'hh:mm a') + '-' + this.datepipe.transform(item.endTime, 'hh:mm a') + ', Coach: ' + item.trainer_name,
         color: colors.yellow,
         start: date,
@@ -163,7 +163,7 @@ export class BookingComponent implements OnInit {
 
 
   getScheduleDetails(data, item: BookPackageModel) {
-    let schedule = new ScheduleBooking();
+    const schedule = new ScheduleBooking();
     schedule.date = data.date;
     schedule.day = data.day;
     schedule.category = this.pagination.id;
@@ -268,7 +268,7 @@ export class BookingComponent implements OnInit {
     // var date = new Date();
     // this.getDate(date, this.schedules[0]);
     this.schedules.forEach(item => {
-      var date = new Date();
+      const date = new Date();
       this.getDate(date, item);
     });
   }

@@ -23,15 +23,15 @@ import {AuthServiceConfig, FacebookLoginProvider, GoogleLoginProvider, SocialLog
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/date-fns';
-import {environment} from "../environments/environment";
-import {AngularFireModule} from "@angular/fire";
-import {AngularFirestoreModule} from "@angular/fire/firestore";
-import {AngularFireAuthModule} from "@angular/fire/auth";
-import {AngularFireStorageModule} from "@angular/fire/storage";
-import {MessagingService} from "../services/messaging.service";
-import {AngularFireMessagingModule} from "@angular/fire/messaging";
-import {CalendarHeaderComponent} from "../components/utils-calender-header/calender-header.component";
-import {NgxShimmerLoadingModule} from "ngx-shimmer-loading";
+import {environment} from '../environments/environment';
+import {AngularFireModule} from '@angular/fire';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+import {AngularFireAuthModule} from '@angular/fire/auth';
+import {AngularFireStorageModule} from '@angular/fire/storage';
+import {MessagingService} from '../services/messaging.service';
+import {AngularFireMessagingModule} from '@angular/fire/messaging';
+import {CalendarHeaderComponent} from '../components/utils-calender-header/calender-header.component';
+import {NgxShimmerLoadingModule} from 'ngx-shimmer-loading';
 
 
 export function HttpLoaderFactory(httpClient: HttpClient) {

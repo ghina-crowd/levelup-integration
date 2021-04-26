@@ -12,8 +12,8 @@ import {PrivacyComponent} from '../app/account/privacy/privacy.component';
 import {MatOptionModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDialogModule} from '@angular/material/dialog';
-import {MyBookingComponent} from "../app/account/my-booking/my-booking.component";
-import {MatExpansionModule} from "@angular/material/expansion";
+import {MyBookingComponent} from '../app/account/my-booking/my-booking.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 const routes: Routes = [
   {
